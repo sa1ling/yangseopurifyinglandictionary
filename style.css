@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+    background-color: #f9f9f9;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+.slider-container {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.card-wrapper {
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+.card {
+    min-width: 250px;
+    max-width: 250px;
+    margin: 0 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    text-align: left;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    user-select: none;
+}
+
+.arrow.left {
+    left: 0;
+}
+
+.arrow.right {
+    right: 0;
+}
+
+.arrow:hover {
+    background-color: rgba(0,0,0,0.8);
+}
